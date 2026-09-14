@@ -1,0 +1,9 @@
+season,validation_method,n
+Dry,Manual PlanetScope,6420
+Trans. Dry-Wet,Manual PlanetScope,5602
+Trans. Wet-Dry,Manual PlanetScope,6289
+Wet,Manual PlanetScope,5968
+Dry,Automated NDVI 0.30,6216
+Trans. Dry-Wet,Automated NDVI 0.30,5551
+Trans. Wet-Dry,Automated NDVI 0.30,5713
+Wet,Automated NDVI 0.30,5767
