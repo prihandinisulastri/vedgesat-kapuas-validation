@@ -72,7 +72,7 @@ Positional error was calculated as:
 ```text
 error = VE distance - VL distance
 
-
+</> Markdown
 before and after things like `NDVI >= 0.30`, filenames, and `metadata/README_data.md`.
 
 Those empty triple-backtick blocks should be deleted. For short items such as filenames or equations, use **inline code with single backticks**. Keep triple backticks only for the repository tree.
