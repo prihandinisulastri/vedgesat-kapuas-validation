@@ -71,15 +71,8 @@ Positional error was calculated as:
 
 ```text
 error = VE distance - VL distance
+```
 
-</> Markdown
-before and after things like `NDVI >= 0.30`, filenames, and `metadata/README_data.md`.
-
-Those empty triple-backtick blocks should be deleted. For short items such as filenames or equations, use **inline code with single backticks**. Keep triple backticks only for the repository tree.
-
-Here is the cleaned version of the section you pasted:
-
-````markdown
 Positive values indicate that the VE intersection is farther from the transect origin than the VL intersection.
 
 Negative values indicate that the VE intersection is closer to the transect origin.
@@ -93,49 +86,3 @@ The sign of the error should not automatically be interpreted as seaward or land
 ### Manual PlanetScope validation
 
 The primary validation reference was manually interpreted from PlanetScope imagery using the outer boundary of continuous vegetation canopy.
-
-### Automated NDVI-derived validation
-
-A secondary PlanetScope validation line was generated using an NDVI threshold of `NDVI >= 0.30`.
-
-This reference was used to evaluate the sensitivity of validation results to vegetation-boundary definition.
-
-It was not treated as an alternative ground truth.
-
----
-
-## Vegetation Groups
-
-MapBiomas Indonesia Collection 4 land-cover classes were sampled at the midpoint of the fixed transects and reclassified into broader analytical groups:
-
-- Mangrove
-- Agriculture
-- Mixed vegetation
-- Excluded
-- NoData
-
----
-
-## Repository Structure
-
-```text
-vedgesat-kapuas-validation/
-│
-├── scripts/
-│   ├── 01_Image_Selection_and_QA.js
-│   ├── 02_Sentinel2_Image_Export.js
-│   ├── 03_Master_Transect_Generation.py
-│   ├── 04_VE_VL_Positional_Validation.py
-│   ├── 05_Statistical_Analysis_and_Sensitivity.R
-│   └── config_kapuas_sites_v2.py
-│
-├── results/
-│   ├── Manual/
-│   ├── Automated_NDVI030/
-│   └── Comparison/
-│
-├── metadata/
-│   └── README_data.md
-│
-├── .gitignore
-└── README.md
